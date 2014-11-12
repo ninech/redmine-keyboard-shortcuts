@@ -15,7 +15,6 @@
     }
 
     trigger_save = function(e) {
-      console.log('trigger_save');
       if($('#update').is(':visible')) {
         window.onbeforeunload = null;
         $('#issue-form').submit();
