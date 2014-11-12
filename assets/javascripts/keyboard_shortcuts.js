@@ -1,12 +1,12 @@
  $(function() {
   if($('body.controller-issues.action-show').length) {
 
-    text_field_focused = function(e) {
+    var text_field_focused = function(e) {
       tag = e.target.tagName.toLowerCase();
       return jQuery.inArray(tag, ['input', 'textarea']) != -1
     }
 
-    edit_issue = function(e) {
+    var edit_issue = function(e) {
       if(!text_field_focused(e) && !$('#update').is(':visible')) {
         e.preventDefault();
         $('a[accesskey="e"]').trigger('click');
@@ -14,7 +14,7 @@
       }
     }
 
-    trigger_save = function(e) {
+    var trigger_save = function(e) {
       console.log('trigger_save');
       if($('#update').is(':visible')) {
         window.onbeforeunload = null;
