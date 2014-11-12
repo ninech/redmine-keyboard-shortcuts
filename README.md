@@ -13,7 +13,7 @@ This plugin adds the following keyboard shortcuts to the Redmine issue view:
 2. Extract to `$REDMINE_DIR/plugins/keyboard_shortcuts`
 3. Restart your web server
 
-# Compatibility
+## Compatibility
 
 This plugin has been tested with the following Redmine versions:
 
